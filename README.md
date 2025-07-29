@@ -1,5 +1,4 @@
 
----
 ## 🌀 One-Click Debian 12 Reinstallation
 
 ### Reinstall your system with a clean **Debian 12** image using a one-liner:
@@ -7,8 +6,6 @@
 ```bash
 curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && bash reinstall.sh debian 12 --password 123456 && reboot
 ```
----
-
 
 > ⚠️ **Warning:** This will completely erase your current system!
 > Make sure to **back up any important data** before running the script.
