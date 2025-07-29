@@ -1,7 +1,7 @@
 
-## 🌀 One-Click Debian 12 Reinstallation
+## 🌀 One-Click Debian 10 Reinstallation
 
-### Reinstall your system with a clean **Debian 12** image using a one-liner:
+### Reinstall your system with a clean **Debian 10** image using a one-liner:
 
 ```bash
 curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && bash reinstall.sh debian 10 --password 123456 --ci  && reboot
@@ -17,5 +17,6 @@ To install the WebTV Player from the .deb package:
 
 ```bash
 apt update && apt install -y sudo nano curl wget
-curl -L https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/webtv-min.zip -o webtv-min.zip
+curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/webtv-min.zip -o webtv-min.zip
+curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup-webtv.sh | bash 
 ```
