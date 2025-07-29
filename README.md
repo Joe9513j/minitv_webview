@@ -1,5 +1,5 @@
 
-```markdown
+---
 ## 🌀 One-Click Debian 12 Reinstallation
 
 ### Reinstall your system with a clean **Debian 12** image using a one-liner:
