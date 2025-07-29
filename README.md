@@ -43,9 +43,4 @@ sudo dpkg -r webtv-player
 - Recommended for KVM-based VPS or dedicated servers.
 - For other OS versions, visit the reinstall script repository.
 
-Let me know if you'd like:
-- Badges (e.g. for license, version)
-- A screenshot preview of WebTV Player
-- Multilingual sections (e.g. 中文版)
-- GitHub Actions or packaging instructions
 ```
