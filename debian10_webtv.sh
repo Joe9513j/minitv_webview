@@ -219,6 +219,7 @@ EOF
 export DISPLAY=:0
 export XAUTHORITY=/home/$USER/.Xauthority
 cd "$APP_DIR"
+node aktv.js || true
 exec /usr/bin/npm start -- --no-sandbox
 EOF
 
