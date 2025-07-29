@@ -1,3 +1,7 @@
+
+```markdown
+---
+title: "📦 Debian 12 Auto Reinstall & WebTV Player Installation Guide"
 ---
 
 # 📦 Debian 12 Auto Reinstall & WebTV Player Installation Guide
@@ -17,16 +21,14 @@ curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh 
 
 ## ▶️ Install WebTV Player
 
-To install the WebTV Player from the `.deb` package:
+To install the WebTV Player from the .deb package:
 
 ```bash
 sudo dpkg -i webtv-player_1.0.0_amd64.deb
 sudo apt-get install -f
 ```
 
-> The second command resolves and installs any missing dependencies.
-
----
+The second command resolves and installs any missing dependencies.
 
 ## 🧹 Uninstall WebTV Player
 
@@ -36,29 +38,22 @@ To remove WebTV Player from your system:
 sudo dpkg -r webtv-player
 ```
 
----
-
 ## 📂 File Descriptions
 
-| Filename                       | Description                                 |
-| ------------------------------ | ------------------------------------------- |
-| `webtv-player_1.0.0_amd64.deb` | WebTV Player installer for Debian (x86\_64) |
-| `reinstall.sh`                 | Auto reinstall script (from bin456789 repo) |
-
----
+| Filename                      | Description                                  |
+|-------------------------------|----------------------------------------------|
+| webtv-player_1.0.0_amd64.deb  | WebTV Player installer for Debian (x86_64)   |
+| reinstall.sh                  | Auto reinstall script (from bin456789 repo)  |
 
 ## 💡 Notes
 
-* Run all commands as **root** or use `sudo`.
-* Recommended for **KVM-based VPS** or **dedicated servers**.
-* For other OS versions, visit the [reinstall script repository](https://github.com/bin456789/reinstall).
-
----
+- Run all commands as root or use sudo.
+- Recommended for KVM-based VPS or dedicated servers.
+- For other OS versions, visit the reinstall script repository.
 
 Let me know if you'd like:
-
-* Badges (e.g. for license, version)
-* A screenshot preview of WebTV Player
-* Multilingual sections (e.g. 中文版)
-* GitHub Actions or packaging instructions
-
+- Badges (e.g. for license, version)
+- A screenshot preview of WebTV Player
+- Multilingual sections (e.g. 中文版)
+- GitHub Actions or packaging instructions
+```
