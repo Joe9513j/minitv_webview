@@ -1,14 +1,8 @@
 
 ```markdown
----
-title: "📦 Debian 12 Auto Reinstall & WebTV Player Installation Guide"
----
-
-# 📦 Debian 12 Auto Reinstall & WebTV Player Installation Guide
-
 ## 🌀 One-Click Debian 12 Reinstallation
 
-Reinstall your system with a clean **Debian 12** image using a one-liner:
+### Reinstall your system with a clean **Debian 12** image using a one-liner:
 
 ```bash
 curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && bash reinstall.sh debian 12 --password 123456 && reboot
