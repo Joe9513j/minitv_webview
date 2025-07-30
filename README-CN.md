@@ -13,7 +13,7 @@
 
 * **所有方法均需：** 稳定的网络连接
 * **Linux/Debian 方法：** 具备 `sudo` 或 root 权限
-* **Windows 方法：** 在 PowerShell 中拥有管理员权限
+* **Windows 方法：** 在 PowerShell/cmd 中拥有管理员权限
 * **Docker 方法：** 已安装并正常运行 Docker
 
 ---
