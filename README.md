@@ -1,5 +1,7 @@
-### 💡 How to Exit Player: Press Ctrl + Alt + Q to quit the player application.
 
+### ** `README.md` (English)**
+
+```markdown
 # 📺 WebTV Installation Guide
 
 This guide provides methods for installing WebTV on Debian-based, Windows, and Docker systems.
@@ -10,11 +12,7 @@ This guide provides methods for installing WebTV on Debian-based, Windows, and D
 *   [**Method 1: For a Fresh Debian 10 System**](#-method-1-for-a-fresh-debian-10-system)
 *   [**Method 2: One-Click Install for Existing Linux Desktops**](#-method-2-one-click-install-for-existing-linux-desktops)
 *   [**Method 3: For Windows (amd64) Systems**](#-method-3-for-windows-amd64-systems)
-*   [**Method 4: Docker Installation (Soft Router)**](#-method-4-docker-installation-soft-router-set-top-box)
-
-> **網頁電視 (WebTV) 安裝指南**
->
-> 本指南提供了在類 Debian 系統、Windows 系統以及 Docker 環境中安裝 WebTV 的方法。
+*   [**Method 4: Docker Installation (Soft Router "Set-top Box")**](#-method-4-docker-installation-soft-router-set-top-box)
 
 ---
 
@@ -26,24 +24,12 @@ Before you begin, ensure you have the following:
 *   **For Windows method:** Administrator privileges in PowerShell.
 *   **For Docker method:** A working installation of Docker.
 
-> **先決條件**
->
-> 在開始之前，請確保您已滿足以下條件：
-> *   **所有方法：** 穩定的網路連線。
-> *   **Linux/Debian 方法：** `sudo` 或 `root` 管理員權限。
-> *   **Windows 方法：** PowerShell 的系統管理員權限。
-> *   **Docker 方法：** Docker 已被正確安裝並正在運行。
-
 ---
 ---
 
 ## **🐧 Method 1: For a Fresh Debian 10 System**
 
 This method is for users who need to install WebTV in a clean Debian 10 environment.
-
-> **方案一：適用於全新 Debian 10 系統**
->
-> 此方法適用於需要在一個純淨的 Debian 10 環境中安裝 WebTV 的用戶。
 
 #### **Step 1: Reinstall Debian 10 with One Click**
 
@@ -79,10 +65,6 @@ curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup
 
 This method is for users already running Fnos, Debian, or Ubuntu who wish to install WebTV directly.
 
-> **方案二：適用於現有 Linux 桌面環境的一鍵安裝**
->
-> 此方法適用於已經運行 Fnos、Debian 或 Ubuntu 桌面系統，並希望直接安裝 WebTV 的用戶。
-
 #### **One-Click Install Command**
 
 Execute the following single-line command in your terminal.
@@ -101,17 +83,13 @@ curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/insta
 
 This method is for installing WebTV on a 64-bit Windows system. Run these commands in **PowerShell** with **administrator privileges**.
 
-> **方案三：適用於 Windows (amd64) 系統**
->
-> 此方法用於在 64 位元的 Windows 系統上安裝 WebTV。請使用**系統管理員權限**打開 **PowerShell** 來執行以下指令。
-
 #### **⚙️ Installation and Execution Steps**
 
 1.  **Download and Install Node.js**
     ```powershell
     # Download
     curl -sSL https://npmmirror.com/mirrors/node/v22.17.1/node-v22.17.1-x64.msi -o node-v22.17.1-x64.msi
-    # Install silently
+    # Install
     msiexec /i "node-v22.17.1-x64.msi" /norestart
     ```
 
@@ -128,7 +106,7 @@ This method is for installing WebTV on a 64-bit Windows system. Run these comman
     ```powershell
     cd /d C:\node\webtv && .\player.exe
     ```
-    第一次运行，会自动下载模块，要耐心等待。
+    *The first time you run it, modules will be downloaded automatically. Please be patient.*
 
 > **💡 How to Exit Player:**
 > Press `Ctrl` + `Alt` + `Q` to quit the player application.
@@ -139,10 +117,6 @@ This method is for installing WebTV on a 64-bit Windows system. Run these comman
 ## **🐳 Method 4: Docker Installation (Soft Router "Set-top Box")**
 
 This setup integrates the WebTV player with an RTMP server, turning your soft router into a streaming media center. The `hb973/webtv` image supports `linux/amd64` and `linux/arm64`.
-
-> **方案四：Docker 安裝 (軟路由“電視機上盒”)**
->
-> 此設定將 WebTV 播放器與一個 RTMP 伺服器整合，將您的軟路由打造成一個串流媒體中心。`hb973/webtv` 映像支持 `linux/amd64` 和 `linux/arm64` 平台。
 
 #### **Step 1: Start the RTMP Server**
 
@@ -155,7 +129,6 @@ docker run -d \
   tiangolo/nginx-rtmp
 ```
 *This starts an Nginx server with the RTMP module.*
-> *此指令會啟動一個帶有 RTMP 模組的 Nginx 伺服器。*
 
 #### **Step 2: Get the Host IP Address**
 
@@ -181,7 +154,6 @@ docker run -d \
   hb973/webtv:latest
 ```
 *The stream URL will be `rtmp://<YOUR_RTMP_IP>/live/stream`.*
-> *串流播放 URL 將會是 `rtmp://<您的RTMP_IP>/live/stream`。*
 
 #### **Step 4 (Optional): Create an M3U8 Playlist**
 
@@ -199,3 +171,5 @@ EOF
 # Access the playlist at http://<your_ip>:1980/tv.m3u
 echo "Playlist URL: http://$IP:1980/tv.m3u"
 ```
+```
+
