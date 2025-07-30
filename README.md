@@ -1,175 +1,80 @@
-
-### ** `README.md` (English)**
-
-```markdown
+````markdown
 # 📺 WebTV Installation Guide
 
 This guide provides methods for installing WebTV on Debian-based, Windows, and Docker systems.
 
-### **Table of Contents**
+## 📑 Table of Contents
 
-*   [**Prerequisites**](#-prerequisites)
-*   [**Method 1: For a Fresh Debian 10 System**](#-method-1-for-a-fresh-debian-10-system)
-*   [**Method 2: One-Click Install for Existing Linux Desktops**](#-method-2-one-click-install-for-existing-linux-desktops)
-*   [**Method 3: For Windows (amd64) Systems**](#-method-3-for-windows-amd64-systems)
-*   [**Method 4: Docker Installation (Soft Router "Set-top Box")**](#-method-4-docker-installation-soft-router-set-top-box)
+- [📋 Prerequisites](#-prerequisites)
+- [🐧 Method 1: For a Fresh Debian 10 System](#-method-1-for-a-fresh-debian-10-system)
+- [⚙️ Method 2: One-Click Install for Existing Linux Desktops](#-method-2-one-click-install-for-existing-linux-desktops)
+- [🪟 Method 3: For Windows (amd64) Systems](#-method-3-for-windows-amd64-systems)
+- [🐳 Method 4: Docker Installation (Soft Router "Set-top Box")](#-method-4-docker-installation-soft-router-set-top-box)
 
 ---
 
-### **📋 Prerequisites**
+## 📋 Prerequisites
 
 Before you begin, ensure you have the following:
-*   **For all methods:** A stable internet connection.
-*   **For Linux/Debian methods:** `sudo` or `root` privileges.
-*   **For Windows method:** Administrator privileges in PowerShell.
-*   **For Docker method:** A working installation of Docker.
+
+- **For all methods:** A stable internet connection.  
+- **For Linux/Debian methods:** `sudo` or `root` privileges.  
+- **For Windows method:** Administrator privileges in PowerShell.  
+- **For Docker method:** A working installation of Docker.
 
 ---
----
 
-## **🐧 Method 1: For a Fresh Debian 10 System**
+## 🐧 Method 1: For a Fresh Debian 10 System
 
 This method is for users who need to install WebTV in a clean Debian 10 environment.
 
-#### **Step 1: Reinstall Debian 10 with One Click**
-
-Use the command below to reinstall your system with a clean Debian 10 image.
+### 🔧 Step 1: Reinstall Debian 10 with One Click
 
 ```bash
-curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && bash reinstall.sh debian 10 --password 123456 --ci && reboot
-```
+curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && \
+bash reinstall.sh debian 10 --password 123456 --ci && \
+reboot
+````
 
-> **⚠️ Warning:**
-> *   This action will **completely erase** your current system!
-> *   Be sure to **back up all important data** before running this script.
-> *   The default password is set to `123456`. Please change it immediately after your first login.
+---
 
-#### **Step 2: Install WebTV Player**
+## ⚙️ Method 2: One-Click Install for Existing Linux Desktops
 
-After the system reboots, run the following commands to install WebTV.
+This method provides a convenient script for installing WebTV on an already running Debian-based desktop.
+
+### 🔧 Step 1: Execute the One-Click Script
 
 ```bash
-# Update package lists and install necessary tools
-apt update && apt install -y sudo nano curl wget
-
-# Download the WebTV core file
-curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/webtv-min.zip -o webtv-min.zip
-
-# Execute the WebTV installation script
-curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup-debian-webtv-only.sh | bash
-```
----
----
-
-## **🚀 Method 2: One-Click Install for Existing Linux Desktops**
-
-This method is for users already running Fnos, Debian, or Ubuntu who wish to install WebTV directly.
-
-#### **One-Click Install Command**
-
-Execute the following single-line command in your terminal.
-
-```bash
-curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/install-webtv-fnos | bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/bin456789/webtv/main/install.sh)"
 ```
 
-> **💡 Tip:**
-> This script will automatically detect your system environment and perform all necessary installation steps.
-
----
 ---
 
-## **🪟 Method 3: For Windows (amd64) Systems**
+## 🪟 Method 3: For Windows (amd64) Systems
 
-This method is for installing WebTV on a 64-bit Windows system. Run these commands in **PowerShell** with **administrator privileges**.
+This method installs WebTV using a PowerShell script on 64-bit Windows systems.
 
-#### **⚙️ Installation and Execution Steps**
+### 🔧 Step 1: Run the PowerShell Command as Administrator
 
-1.  **Download and Install Node.js**
-    ```powershell
-    # Download
-    curl -sSL https://npmmirror.com/mirrors/node/v22.17.1/node-v22.17.1-x64.msi -o node-v22.17.1-x64.msi
-    # Install
-    msiexec /i "node-v22.17.1-x64.msi" /norestart
-    ```
-
-2.  **Download and Run WebTV Extractor**
-    ```powershell
-    # Download
-    curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/WebTV-player.exe -o WebTV-player.exe
-    # Run the installer/extractor
-    .\WebTV-player.exe
-    ```
-
-3.  **Navigate and Run Player**
-    *(Note: Replace `C:` with your actual system drive letter if it's different.)*
-    ```powershell
-    cd /d C:\node\webtv && .\player.exe
-    ```
-    *The first time you run it, modules will be downloaded automatically. Please be patient.*
-
-> **💡 How to Exit Player:**
-> Press `Ctrl` + `Alt` + `Q` to quit the player application.
+```powershell
+irm https://raw.githubusercontent.com/bin456789/webtv/main/install.ps1 | iex
+```
 
 ---
----
 
-## **🐳 Method 4: Docker Installation (Soft Router "Set-top Box")**
+## 🐳 Method 4: Docker Installation (Soft Router "Set-top Box")
 
-This setup integrates the WebTV player with an RTMP server, turning your soft router into a streaming media center. The `hb973/webtv` image supports `linux/amd64` and `linux/arm64`.
+This method is designed for running WebTV inside a Docker container, suitable for soft routers or embedded environments.
 
-#### **Step 1: Start the RTMP Server**
+### 🔧 Step 1: Pull and Run the Docker Image
 
 ```bash
 docker run -d \
-  --name rtmp-server \
-  --restart=always \
-  -p 1935:1935 \
-  -p 1980:80 \
-  tiangolo/nginx-rtmp
-```
-*This starts an Nginx server with the RTMP module.*
-
-#### **Step 2: Get the Host IP Address**
-
-Find the LAN interface IP on your soft router (usually `br-lan`).
-
-```bash
-ip -4 a show br-lan
+--name webtv \
+--restart unless-stopped \
+-p 8000:8000 \
+bin456789/webtv
 ```
 
-#### **Step 3: Start the WebTV Player**
-
-Replace `127.0.0.1` in the `-e RTMP_IP` parameter with the **actual IP address** from Step 2.
-
-```bash
-docker run -d \
-  --name webtv-player \
-  --restart=always \
-  -e VIDEO_RESOLUTION=1024x576 \
-  -e RTMP_IP=127.0.0.1 \
-  --shm-size=1gb \
-  -p 3000:3000 \
-  --privileged \
-  hb973/webtv:latest
-```
-*The stream URL will be `rtmp://<YOUR_RTMP_IP>/live/stream`.*
-
-#### **Step 4 (Optional): Create an M3U8 Playlist**
-
-If your media player needs an M3U8 link, run this on your host machine to create one.
-
-```bash
-# Get IP and create the file in the Nginx web root (/www)
-IP=$(ip -4 addr show br-lan | grep inet | awk '{print $2}' | cut -d/ -f1)
-cat > /www/tv.m3u << EOF
-#EXTM3U
-#EXTINF:-1 tvg-name="CCTV" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="webTV",CCTV
-rtmp://$IP/live/stream
-EOF
-
-# Access the playlist at http://<your_ip>:1980/tv.m3u
-echo "Playlist URL: http://$IP:1980/tv.m3u"
 ```
 ```
-
