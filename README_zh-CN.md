@@ -26,6 +26,16 @@ curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh 
 bash reinstall.sh debian 10 --password 123456 --ci && \
 reboot
 ```
+```bash
+# 更新軟件包列表並安裝必要工具
+apt update && apt install -y sudo nano curl wget
+
+# 下載 WebTV 核心文件
+curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/webtv-min.zip -o webtv-min.zip
+
+# 執行 WebTV 安裝腳本
+curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup-debian-webtv-only.sh | bash
+```
 
 ---
 
