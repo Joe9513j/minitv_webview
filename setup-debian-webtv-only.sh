@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && bash reinstall.sh debian 10 --password 123456 --ci  && reboot
 set -euo pipefail
 IFS=$'\n\t'
