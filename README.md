@@ -15,16 +15,17 @@ Before you begin, ensure you have the following:
 
 ---
 
-## 🐧 Method 1: For a Fresh Debian 10 System
-
-This method is for users who need to install WebTV in a clean Debian 10 environment.
-
-### Step 1: Reinstall Debian 10 with One Click
+## 🐧 Method 1: Reinstall Debian 10 with One Click + WebTV Player
 
 ```bash
 curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh && \
 bash reinstall.sh debian 10 --password 123456 --ci && \
 reboot
+```
+```bash
+apt update && apt install -y sudo nano curl wget
+curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/webtv-min.zip -o webtv-min.zip
+curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup-debian-webtv-only.sh | bash
 ```
 
 ---
