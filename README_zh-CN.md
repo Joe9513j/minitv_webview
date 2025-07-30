@@ -48,7 +48,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/bin456789/webtv/main/ins
 
 ## 🪟 方法 3：适用于 Windows (amd64) 系统
 
-通过 PowerShell 脚本在 64 位 Windows 系统上安装 WebTV。
+通过 PowerShell/cmd 在 64 位 Windows 系统上安装 WebTV。
 
 ### 以管理员身份运行 PowerShell/cmd 命令
 
