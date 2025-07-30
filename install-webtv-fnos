@@ -1,0 +1,64 @@
+#!/bin/bash
+set -e
+
+# --- Configuration ---
+APP_DIR="$HOME/webtv"
+ZIP_URL="https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/webtv-min.zip"
+ZIP_FILE="/tmp/webtv-min.zip"
+
+# --- Logging function ---
+log() {
+  echo "[$1] $2"
+}
+
+# --- Install Node.js from NodeSource ---
+log "INFO" "Setting up Node.js from NodeSource..."
+
+curl -fsSL https://deb.nodesource.com/setup_current.x | bash - || {
+  log "ERROR" "NodeSource setup failed"
+  exit 1
+}
+
+apt-get install -y nodejs || {
+  log "ERROR" "Node.js install failed"
+  exit 1
+}
+
+# --- Download the zip ---
+log "INFO" "Downloading webtv-min.zip..."
+curl -sSL "$ZIP_URL" -o "$ZIP_FILE" || {
+  log "ERROR" "Failed to download zip file"
+  exit 1
+}
+
+# --- Verify the zip exists ---
+if [ ! -f "$ZIP_FILE" ]; then
+  log "ERROR" "Missing webtv-min.zip"
+  exit 1
+fi
+
+# --- Install unzip tool if needed ---
+if ! command -v 7z >/dev/null 2>&1; then
+  log "INFO" "Installing p7zip-full..."
+  apt-get install -y p7zip-full
+fi
+
+# --- Extract the zip ---
+log "INFO" "Extracting zip to $APP_DIR..."
+mkdir -p "$APP_DIR"
+7z x "$ZIP_FILE" -o"$APP_DIR" || {
+  log "ERROR" "Unzip failed"
+  exit 1
+}
+
+# --- Install dependencies ---
+cd "$APP_DIR"
+log "INFO" "Installing npm packages..."
+npm install || {
+  log "ERROR" "npm install failed"
+  exit 1
+}
+
+# --- Start the application ---
+log "INFO" "Starting the application..."
+npm start
