@@ -45,3 +45,4 @@ echo "   docker ps"
 echo
 echo "👉 If you want to run Docker without sudo, run:"
 echo "   sudo usermod -aG docker \$USER && newgrp docker"
+
