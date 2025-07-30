@@ -105,14 +105,8 @@ player.exe
 
 > **方案四：Docker 安裝**
 
-### 🐳 **Basic Setup 基礎安裝**
-```bash
-docker run -d --name=webtv --restart=always -p 8111:8111 hb973/webtv
-```
-Access at 訪問地址: `http://<your_server_ip>:8111`
-
 ### 📡 **Advanced: Soft Router Setup**  
-**進階：軟路由機上盒方案**
+**軟路由/虚拟机機上盒方案**
 
 1. **Start RTMP Server** 啟動RTMP服務
 ```bash
