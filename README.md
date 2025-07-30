@@ -1,3 +1,4 @@
+### 💡 How to Exit Player: Press Ctrl + Alt + Q to quit the player application.
 
 # 📺 WebTV Installation Guide
 
