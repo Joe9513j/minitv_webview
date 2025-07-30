@@ -128,6 +128,7 @@ This method is for installing WebTV on a 64-bit Windows system. Run these comman
     ```powershell
     cd /d C:\node\webtv && .\player.exe
     ```
+    第一次运行，会自动下载模块，要耐心等待。
 
 > **💡 How to Exit Player:**
 > Press `Ctrl` + `Alt` + `Q` to quit the player application.
