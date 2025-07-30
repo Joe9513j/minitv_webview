@@ -38,7 +38,7 @@ curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup
 
 适用于已经运行的基于 Debian 的 Linux 桌面系统，使用此脚本快速安装 WebTV。
 
-### 第一步：执行一键安装脚本
+### 执行一键安装脚本
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/bin456789/webtv/main/install.sh)"
