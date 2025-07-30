@@ -1,14 +1,3 @@
-好的，我已經根據您的要求修復了版式，並重新組織了內容，使其邏輯更加清晰。
-
-主要的修改如下：
-
-1.  **邏輯重組**：將 Docker 相關的內容整合到 **方案四 (Method 4)** 中。現在它包含了一個 **基礎安裝** 和一個 **進階應用 (軟路由)**，使結構更加清晰。
-2.  **修正錯位內容**：將只適用於 Windows 的 **“如何退出播放器”** 提示移回到 **方案三 (Method 3)** 的末尾。
-3.  **版式統一**：調整了標題、分隔線和程式碼區塊，使整個文件風格一致。
-4.  **內容翻譯與補充**：為新增的軟路由部分補充了對應的英文翻譯，並對指令進行了更詳細的解釋。
-
----
-
 # WebTV Installation Guide
 
 This guide provides methods for installing WebTV on Debian-based, Windows, and Docker systems.
