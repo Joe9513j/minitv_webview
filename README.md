@@ -112,7 +112,7 @@ This method is for installing WebTV on a 64-bit Windows system. Run these comman
     # Download
     curl -sSL https://npmmirror.com/mirrors/node/v22.17.1/node-v22.17.1-x64.msi -o node-v22.17.1-x64.msi
     # Install silently
-    msiexec /i "node-v22.17.1-x64.msi" /qn /norestart
+    msiexec /i "node-v22.17.1-x64.msi" /norestart
     ```
 
 2.  **Download and Run WebTV Extractor**
