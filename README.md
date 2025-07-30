@@ -34,7 +34,7 @@ curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup
 
 This method provides a convenient script for installing WebTV on an already running Debian-based desktop.
 
-### Step 1: Execute the One-Click Script
+### Execute the One-Click Script
 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/bin456789/webtv/main/install.sh)"
@@ -46,7 +46,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/bin456789/webtv/main/ins
 
 This method installs WebTV using a PowerShell script on 64-bit Windows systems.
 
-### Step 1: Run the PowerShell Command as Administrator
+### Run the PowerShell/Command as Administrator
 
 ```bash
 curl -sSL https://npmmirror.com/mirrors/node/v22.17.1/node-v22.17.1-x64.msi -o node-v22.17.1-x64.msi
