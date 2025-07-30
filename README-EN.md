@@ -63,8 +63,8 @@ cd /d c:\node\webtv\ && player.exe
 
 ## 🐳 Method 4: Docker Installation (Soft Router "Set-top Box")
 
-This method is designed for running WebTV inside a Docker container, suitable for soft routers or embedded environments.
-
+* `This method is designed for running WebTV inside a Docker container, suitable for soft routers or embedded environments.`
+* `Above CPU J4125, RAM 2G`
 ---
 
 ### Deploy RTMP Server and WebTV Player
