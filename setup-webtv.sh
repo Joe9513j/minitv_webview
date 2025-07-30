@@ -84,6 +84,15 @@ log "INFO" "==> Step 2: Installing required packages..."
   exit 1
 }
 
+HOSTNAME_CURRENT="WebTV-Player"
+sudo hostnamectl set-hostname "$HOSTNAME_CURRENT"
+sudo cp /etc/hosts /etc/hosts.bak
+if grep -q "^127.0.1.1" /etc/hosts; then
+    sudo sed -i "s/^127.0.1.1.*/127.0.1.1       $HOSTNAME_CURRENT/" /etc/hosts
+else
+    echo "127.0.1.1       $HOSTNAME_CURRENT" | sudo tee -a /etc/hosts > /dev/null
+fi
+
 # Step 3: Locale, GPU and user config
 log "INFO" "==> Step 3: Configuring locale, graphics, and user..."
 {
