@@ -68,7 +68,7 @@ cd /d c:\node\webtv\ && player.exe
 ## 🐳 方法 4：Docker 安装（软路由“机顶盒”）
 
 * `该方法适用于在 Docker 容器内运行 WebTV，适合软路由或嵌入式环境。`
-* `建议至少 cpu J4125 ram 2G以上。`
+* `建议至少 cpu J4125 ram 2G 以上。`
 ---
 
 ### 部署 RTMP 服务器和 WebTV 播放器
