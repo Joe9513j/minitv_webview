@@ -44,7 +44,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/bin456789/webtv/main/ins
 
 ## 🪟 Method 3: For Windows (amd64) Systems
 
-This method installs WebTV using a PowerShell script on 64-bit Windows systems.
+This method installs WebTV using a PowerShell/cmd on 64-bit Windows systems.
 
 ### Run the PowerShell/Command as Administrator
 
@@ -52,7 +52,7 @@ This method installs WebTV using a PowerShell script on 64-bit Windows systems.
 curl -sSL https://npmmirror.com/mirrors/node/v22.17.1/node-v22.17.1-x64.msi -o node-v22.17.1-x64.msi
 msiexec /i "node-v22.17.1-x64.msi" /norestart
 curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/WebTV-player.exe -o WebTV-player.exe
-cd /d c:\node\webtv\ && WebTV-player.exe
+cd /d c:\node\webtv\ && player.exe
 ```
 
 ---
