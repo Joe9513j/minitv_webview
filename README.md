@@ -45,7 +45,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/bin456789/webtv/main/ins
 
 ---
 
-## 🪟 Method 3: For Windows (amd64) Systems
+## 🖥️ Method 3: For Windows (amd64) Systems
 
 This method installs WebTV using a PowerShell/cmd on 64-bit Windows systems.
 
