@@ -13,7 +13,7 @@ curl -O https://raw.githubusercontent.com/bin456789/reinstall/main/reinstall.sh 
 
 ## ▶️ Install WebTV Player
 
-To install the WebTV Player from the .deb package:
+To install the WebTV Player from the .zip package:
 
 ```bash
 apt update && apt install -y sudo nano curl wget
