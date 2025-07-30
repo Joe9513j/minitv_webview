@@ -1,3 +1,6 @@
+#### 💡 如何退出播放器:
+#### 按下 `Ctrl + Alt + Q` 鍵即可退出播放程式。
+
 # 📺 WebTV 安装指南
 
 本指南提供了在基于 Debian 的系统、Windows 以及 Docker 环境中安装 WebTV 的方法。
