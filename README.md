@@ -18,5 +18,5 @@ To install the WebTV Player from the .zip package:
 ```bash
 apt update && apt install -y sudo nano curl wget
 curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/webtv-min.zip -o webtv-min.zip
-curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup-webtv.sh | bash 
+curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup-debian-webtv-only.sh | bash 
 ```
