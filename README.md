@@ -1,3 +1,4 @@
+
 ### 💡 How to Exit the Player:
 ### Press `Ctrl + Alt + Q` keys to quit the player.
 ---
