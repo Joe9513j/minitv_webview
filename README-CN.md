@@ -3,7 +3,7 @@
 
 # 📺 WebTV 安装指南
 
-本指南提供了在基于 Debian 的系统、Windows 以及 Docker 环境中安装 WebTV 的方法。
+本指南提供了在基于 Debian 的系统、Windows 以及 Docker 环境中安装 WebTV 的方式。
 
 ---
 
@@ -11,14 +11,14 @@
 
 开始之前，请确保具备以下条件：
 
-* **所有方法均需：** 稳定的网络连接
-* **Linux/Debian 方法：** 具备 `sudo` 或 root 权限
-* **Windows 方法：** 在 PowerShell/cmd 中拥有管理员权限
-* **Docker 方法：** 已安装并正常运行 Docker
+* **所有方式均需：** 稳定的网络连接
+* **Linux/Debian 方式：** 具备 `sudo` 或 root 权限
+* **Windows 方式：** 在 PowerShell/cmd 中拥有管理员权限
+* **Docker 方式：** 已安装并正常运行 Docker
 
 ---
 
-## 🐧 方法 1：适用于全新 Debian 10 系统
+## 🐧 方式 1：适用于全新 Debian 10 系统
 
 适用于需要在全新 Debian 10 环境中安装 WebTV 的用户。
 
@@ -37,7 +37,7 @@ curl -sSL https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/setup
 
 ---
 
-## ⚙️ 方法 2：现有 Linux 桌面的一键安装
+## ⚙️ 方式 2：现有 Linux 桌面的一键安装
 
 适用于已经运行的基于 Debian 的 Linux 桌面系统，使用此脚本快速安装 WebTV。
 
@@ -49,7 +49,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/bin456789/webtv/main/ins
 
 ---
 
-## 🖥️ 方法 3：适用于 Windows (amd64) 系统
+## 🖥️ 方式 3：适用于 Windows (amd64) 系统
 
 通过 PowerShell/cmd 在 64 位 Windows 系统上安装 WebTV。
 
@@ -65,9 +65,9 @@ cd /d c:\node\webtv\ && player.exe
 
 ---
 
-## 🐳 方法 4：Docker 安装（软路由“机顶盒”）
+## 🐳 方式 4：Docker 安装（软路由“机顶盒”）
 
-* `该方法适用于在 Docker 容器内运行 WebTV，适合软路由或嵌入式环境。`
+* `该方式适用于在 Docker 容器内运行 WebTV，适合软路由或嵌入式环境。`
 * `建议至少 cpu J4125 ram 2G 及以上。`
 ---
 
