@@ -62,3 +62,4 @@ npm install || {
 # --- Start the application ---
 log "INFO" "Starting the application..."
 npm start
+
