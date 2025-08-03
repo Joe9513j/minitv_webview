@@ -164,7 +164,7 @@ echo "Stream URL: http://$IP/tv.m3u"
 1. 点击下载应用：[app-release.zip](https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/app-release.zip)
 2. 解压 `app-release.zip`
 3. 安装其中的 APK 文件（确保你的设备允许安装未知来源的应用）
-4. 打开 App，输入视频流地址，即可播放
+4. 开箱即用
 
 ---
 
