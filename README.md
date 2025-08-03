@@ -143,4 +143,32 @@ echo "Stream URL: http://$IP/tv.m3u"
 ```
 
 ---
+以下是你提供内容的英文翻译版本，格式完全保留一致：
+
+---
+
+## 5.📺 WebTV Player (Android Version)
+
+> ⚠️ This is a test version, only briefly tested on some Android phones.
+> 📦 Download link: [app-release.zip](https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/app-release.zip)
+
+---
+
+### ✨ Features
+
+* 📡 Supports input of M3U8 and HTTP(s) live/VoD video stream URLs
+* 🔁 Basic playback controls (Play / Pause / Fullscreen)
+* 📱 UI optimized for mobile devices
+* 🚫 No ads, open source and free
+
+---
+
+### 📥 Download & Installation
+
+1. Click to download the app: [app-release.zip](https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/app-release.zip)
+2. Unzip the `app-release.zip` file
+3. Install the included APK file (make sure your device allows installation from unknown sources)
+4. Open the app and enter a video stream URL to start playback
+
+---
 
