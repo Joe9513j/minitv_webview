@@ -146,7 +146,6 @@ echo "Stream URL: http://$IP/tv.m3u"
 ## 5📺 WebTV 播放器（Android 版）
 
 > ⚠️ 当前版本为测试版本，仅在部分 Android 7.0及以上的手机上进行过简单测试通过。
-> 📦 下载地址：[app-release-v1.1.6.zip](https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/app-release-1.1.6.zip)
 
 ---
 
@@ -162,7 +161,7 @@ echo "Stream URL: http://$IP/tv.m3u"
 
 ### 📥 下载与安装
 
-1. 点击下载应用：[app-release.zip](https://raw.githubusercontent.com/Joe9513j/webtv/refs/heads/main/app-release-1.1.6.zip)
+1. 按架构点击下载应用
 2. 解压 `app-release.zip`
 3. 安装其中的 APK 文件（确保你的设备允许安装未知来源的应用）
 4. 开箱即用
