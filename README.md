@@ -161,7 +161,7 @@ echo "Stream URL: http://$IP/tv.m3u"
 
 ### 📥 下载与安装
 
-1. 按架构点击下载应用
+1. 按架构点击下载应用 AndroidTV-TBS-X5-v1.1.16-release.apk.zip 适用于旧机型,电视机,机顶盒; MiniTV-TV-Mobile-v1.1.7-release.apk.zip 适用于手机,新型电视机
 2. 解压 `app-release.zip`
 3. 安装其中的 APK 文件（确保你的设备允许安装未知来源的应用）
 4. 开箱即用
